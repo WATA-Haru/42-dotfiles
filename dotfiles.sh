@@ -9,7 +9,7 @@ ln -fs ~/dotfiles/fish/config.fish  ~/.config/fish/config.fish
 
 # vim
 ln -fs ~/dotfiles/vimrc/vimrc  ~/.vimrc
-ln -fs ~/dotfiles/vimrc/vim  ~/.vim
+ln -fs ~/dotfiles/vimrc/vim ~/.vim
 
 # neovim
 ln -fs ~/dotfiles/nvim  ~/.config/nvim
