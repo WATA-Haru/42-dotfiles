@@ -1,0 +1,18 @@
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias gs='git status'
+alias c='clear'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias tmux='tmux -u'
+
+# 42tokyo setting
+alias norminette='norminette -R CheckForbiddenSourceHeader'
+
+# create symbolic link for pre-installed nvim share and state dir
+alias nvimshare='rm -rf ~/.local/share/nvim && mkdir ~/.local/share && ln -s /home/nvim_localplug_cache/share/nvim ~/.local/share/nvim'
+alias nvimstate='rm -rf ~/.local/state/nvim && mkdir ~/.local/state && ln -s /home/nvim_localplug_cache/state/nvim ~/.local/state/nvim'
