@@ -4,16 +4,42 @@ export SAVEHIST=$HISTSIZE
 
 setopt share_history
 setopt inc_append_history
+setopt correct
 
 #alias cc='cc -Wall -Wextra -Werror *.c'
 #alias ucc='cc *.c'
 #alias unc='unalias cc'
+
+# alias
+alias so='source'
 alias ft='norminette -R CheckForbiddenSourceHeader'
 alias lsa='ls -1Gp'
-alias la='ls -la'
+alias la='ls -a'
+alias lla='ls -la'
 alias szh='source ~/.zshrc && echo "zsh resetting DONE!"'
 alias code='open -a /Applications/Visual\ Studio\ Code.app/'
 alias c='clear'
+alias cc='cc -Wall -Werror -Wextra'
+alias norm='norminette'
+
+# Git
+alias g='git'
+alias gl='git log'
+alias gc='git clone'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gp='git push'
+alias gs='git status'
+alias gl='git log'
+
+setopt auto_cd
+setopt share_history
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt HIST_IGNORE_SPACE
+SAVEHIST=10000
+HISTSIZE=10000
+HISTFILE=~/.zsh_history
 
 #prompt
 PROMPT='%B%F{cyan}%~%b%f
@@ -42,3 +68,6 @@ alias paco="$HOME"/francinette/tester.sh
 
 alias nvim='/Users/hwatahik/nvim-macos/bin/nvim'
 export MYVIMRC="$HOME/.config/nvim/init.lua"
+
+
+
