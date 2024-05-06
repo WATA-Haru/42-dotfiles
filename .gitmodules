@@ -4,3 +4,4 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:WATA-Haru/nvim.git
+	branch = 42nvim
