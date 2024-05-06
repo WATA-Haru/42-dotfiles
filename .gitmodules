@@ -1,0 +1,6 @@
+[submodule "vimrc"]
+	path = vimrc
+	url = git@github.com:WATA-Haru/vimrc.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:WATA-Haru/nvim.git
