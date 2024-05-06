@@ -1,14 +1,24 @@
 alias ls='ls --color=auto'
 alias la='ls -a'
+alias lla='ls -la'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
-alias gs='git status'
 alias c='clear'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias tmux='tmux -u'
+
+alias gcl='git clone'
+alias gs='git status'
+alias gcm='git commit -m'
+alias gad='git add'
+alias gsw='git switch'
+alias gbr='git branch'
+
+# move often use project folder
+alias cdhwata='cd /mnt/c/Users/hwata/OneDrive/ドキュメント/HarutoWatahiki/'
 
 # 42tokyo setting
 alias norminette='norminette -R CheckForbiddenSourceHeader'
