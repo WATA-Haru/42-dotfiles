@@ -15,6 +15,9 @@ for everyone
 git clone --recursive https://github.com/WATA-Haru/dotfiles.git
 ```
 
+**CHANGE my-gitconfig author name and email to yours**
+
+
 for me
 ```
 git clone --recursive git@github.com:WATA-Haru/dotfiles.git

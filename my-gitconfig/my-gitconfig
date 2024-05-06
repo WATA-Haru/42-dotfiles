@@ -1,6 +1,6 @@
-#[user]
-	#name = 
-	#email = 
+[user]
+	name = WATA-Haru
+	email = 43723360+WATA-Haru@users.noreply.github.com
 [core]
 	editor = vim
 [color]
