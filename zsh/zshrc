@@ -1,0 +1,44 @@
+export HISTSIZE=100000
+HISTFILE=$HOME/.zsh_history
+export SAVEHIST=$HISTSIZE
+
+setopt share_history
+setopt inc_append_history
+
+#alias cc='cc -Wall -Wextra -Werror *.c'
+#alias ucc='cc *.c'
+#alias unc='unalias cc'
+alias ft='norminette -R CheckForbiddenSourceHeader'
+alias lsa='ls -1Gp'
+alias la='ls -la'
+alias szh='source ~/.zshrc && echo "zsh resetting DONE!"'
+alias code='open -a /Applications/Visual\ Studio\ Code.app/'
+alias c='clear'
+
+#prompt
+PROMPT='%B%F{cyan}%~%b%f
+%F{magenta}:>%f'
+
+export MAIL=$USER@student.42tokyo.jp
+export PATH=$HOME/my_local/homebrew/bin:$PATH
+export HOMEBREW_CACHE=$HOME/my_local/homebrew/cache
+export PATH="$HOME/my_local/nvim-macos/bin:$PATH"
+
+#alias francinette=/Users/hwatahik/francinette/tester.sh
+#alias paco=/Users/hwatahik/francinette/tester.sh
+
+function gitmain() {
+  git config --global user.name $USER
+  git config --global user.email $MAIL
+}
+
+function gitsub() {
+  git config --global user.name "WATA-Haru"
+  git config --global user.email "43723360+WATA-Haru@users.noreply.github.com"
+}
+
+alias francinette="$HOME"/francinette/tester.sh
+alias paco="$HOME"/francinette/tester.sh
+
+alias nvim='/Users/hwatahik/nvim-macos/bin/nvim'
+export MYVIMRC="$HOME/.config/nvim/init.lua"
