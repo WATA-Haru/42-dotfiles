@@ -18,10 +18,10 @@ alias gsw='git switch'
 alias gbr='git branch'
 
 # move often use project folder
-alias cdhwata='cd /mnt/c/Users/hwata/OneDrive/ドキュメント/HarutoWatahiki/'
+alias cdhwata='cd ~/HarutoWatahiki/'
 
 # 42tokyo setting
-alias norminette='norminette -R CheckForbiddenSourceHeader'
+alias norminette='python3 -m norminette -R CheckForbiddenSourceHeader'
 
 # create symbolic link for pre-installed nvim share and state dir
 alias nvimshare='rm -rf ~/.local/share/nvim && mkdir ~/.local/share && ln -s /home/nvim_localplug_cache/share/nvim ~/.local/share/nvim'
