@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-alias nvim=$HOME/.local/bin/nvim
+#alias nvim=$HOME/.local/bin/nvim
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias lla='ls -la'
@@ -33,10 +33,10 @@ alias norminette='norminette -R CheckForbiddenSourceHeader'
 # if status is-interactive
 #   source ~/.asdf/asdf.fish
 # end
-source ~/.asdf/asdf.fish
+#source ~/.asdf/asdf.fish
 
 # move often use project folder
-alias cdhwata='cd /mnt/c/Users/hwata/OneDrive/ドキュメント/HarutoWatahiki/'
+#alias cdhwata='cd /mnt/c/Users/hwata/OneDrive/ドキュメント/HarutoWatahiki/'
 # create symbolic link for pre-installed nvim share and state dir
-alias nvimshare='rm -rf ~/.local/share/nvim && mkdir ~/.local/share && ln -s /home/nvim_localplug_cache/share/nvim ~/.local/share/nvim'
-alias nvimstate='rm -rf ~/.local/state/nvim && mkdir ~/.local/state && ln -s /home/nvim_localplug_cache/state/nvim ~/.local/state/nvim'
+#alias nvimshare='rm -rf ~/.local/share/nvim && mkdir ~/.local/share && ln -s /home/nvim_localplug_cache/share/nvim ~/.local/share/nvim'
+#alias nvimstate='rm -rf ~/.local/state/nvim && mkdir ~/.local/state && ln -s /home/nvim_localplug_cache/state/nvim ~/.local/state/nvim'
