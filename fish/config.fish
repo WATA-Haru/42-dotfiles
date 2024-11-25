@@ -35,8 +35,29 @@ alias norminette='norminette -R CheckForbiddenSourceHeader'
 # end
 source ~/.asdf/asdf.fish
 
-# move often use project folder
-alias cdhwata='cd /mnt/c/Users/hwata/OneDrive/ドキュメント/HarutoWatahiki/'
+set PATH $HOME/.local/bin:/usr/local/bin /home/hwata/.local/bin /home/hwata/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/ $PATH
+
+# cd my documents
+set MY_WIN_HOME_DIR "/mnt/c/Users/hwata"
+
+alias cddev="cd ~/hwatadev"
+alias cdhwata="cd $MY_WIN_HOME_DIR/Documents/HarutoWatahiki"
+alias cdob="cd $MY_WIN_HOME_DIR/Documents/obsidian-sync"
+alias cdobs="cd $MY_WIN_HOME_DIR/Documents/obsidian-sync"
+
+# edit config alias
+alias fishconfig="vim ~/.config/fish/config.fish"
 # create symbolic link for pre-installed nvim share and state dir
-alias nvimshare='rm -rf ~/.local/share/nvim && mkdir ~/.local/share && ln -s /home/nvim_localplug_cache/share/nvim ~/.local/share/nvim'
-alias nvimstate='rm -rf ~/.local/state/nvim && mkdir ~/.local/state && ln -s /home/nvim_localplug_cache/state/nvim ~/.local/state/nvim'
+alias nvimshare="rm -rf ~/.local/share/nvim && mkdir ~/.local/share && ln -s /home/nvim_localplug_cache/share/nvim ~/.local/share/nvim"
+alias nvimstate="rm -rf ~/.local/state/nvim && mkdir ~/.local/state && ln -s /home/nvim_localplug_cache/state/nvim ~/.local/state/nvim"
+
+function fish_user_key_bindings
+    for mode in default insert visual
+        fish_default_key_bindings -M $mode
+    end
+    fish_vi_key_bindings --no-erase
+    if test "$__fish_active_key_bindings" = fish_vi_key_bindings
+        bind -M insert -m default jk force-repaint
+    end
+end
+
