@@ -53,12 +53,13 @@ alias nvimshare="rm -rf ~/.local/share/nvim && mkdir ~/.local/share && ln -s /ho
 alias nvimstate="rm -rf ~/.local/state/nvim && mkdir ~/.local/state && ln -s /home/nvim_localplug_cache/state/nvim ~/.local/state/nvim"
 
 function fish_user_key_bindings
-    for mode in default insert visual
-        fish_default_key_bindings -M $mode
-    end
+	for mode in default insert visual
+	    fish_default_key_bindings -M $mode
+	end
     fish_vi_key_bindings --no-erase
     if test "$__fish_active_key_bindings" = fish_vi_key_bindings
         bind -M insert -m default jk force-repaint
     end
 end
 
+fish_user_key_bindings
