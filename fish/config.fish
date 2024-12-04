@@ -1,8 +1,9 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-
-alias nvim=$HOME/.local/bin/nvim
+#set -Ux TERM screen-256color
+alias nvim='TERM=Myterm-256color $HOME/.local/bin/nvim'
+alias nvim='$HOME/.local/bin/nvim'
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias lla='ls -la'
@@ -38,7 +39,7 @@ source ~/.asdf/asdf.fish
 set PATH $HOME/.local/bin:/usr/local/bin /home/hwata/.local/bin /home/hwata/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/ $PATH
 
 # cd my documents
-set MY_WIN_HOME_DIR "/mnt/c/Users/hwata"
+set MY_WIN_HOME_DIR "/mnt/c/Users/harut"
 
 alias cddev="cd ~/hwatadev"
 alias cdhwata="cd $MY_WIN_HOME_DIR/Documents/HarutoWatahiki"

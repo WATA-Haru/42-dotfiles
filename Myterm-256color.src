@@ -1,0 +1,3 @@
+Myterm-256color|xterm with 256 colors with decorations,
+	Smulx=\E[4:%p1%dm,
+	use=xterm-256color,
